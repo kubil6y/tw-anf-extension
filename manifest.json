@@ -7,7 +7,7 @@
   "permissions": ["storage"],
   "content_scripts": [
     {
-      "matches": ["https://www.twitch.tv/*"],
+      "matches": ["https://www.twitch.tv/"],
       "css": ["styles.css"],
       "js": ["main.js"]
     }
