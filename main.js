@@ -17,8 +17,10 @@ const main = async () => {
     await sleep(10000);
     const vid = document.querySelector('video');
     if (vid) {
-      vid.pause();
-      console.log('*** VIDEO HAS BEEN PAUSED ***');
+      if (window.location.href === 'https://www.twitch.tv/') {
+        vid.pause();
+        console.log('*** VIDEO HAS BEEN PAUSED ***');
+      }
     }
   } catch (e) {
     console.log(e);
